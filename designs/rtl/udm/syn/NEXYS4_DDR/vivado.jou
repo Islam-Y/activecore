@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Oct 19 21:21:06 2024
+# Process ID: 15604
+# Current directory: C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11652 C:\1\activecore-master\activecore-master\designs\rtl\udm\syn\NEXYS4_DDR\NEXYS4_DDR.xpr
+# Log file: C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/vivado.log
+# Journal file: C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xpr
+launch_simulation
+open_wave_config C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+close [ open C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/LFSR.v w ]
+add_files C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/LFSR.v
+add_bp {C:/1/activecore-master/activecore-master/designs/rtl/udm/tb/tb.sv} 26
+remove_bps -file {C:/1/activecore-master/activecore-master/designs/rtl/udm/tb/tb.sv} -line 26
+add_bp {C:/1/activecore-master/activecore-master/designs/rtl/udm/tb/tb.sv} 28
+remove_bps -file {C:/1/activecore-master/activecore-master/designs/rtl/udm/tb/tb.sv} -line 28
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+close_sim

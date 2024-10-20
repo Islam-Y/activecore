@@ -1,0 +1,23 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/1/activecore-master/activecore-master/designs/rtl/udm/tb/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+WARNING: [VRFC 10-3824] variable 'ARRSIZE' must explicitly be declared as automatic or static [C:/1/activecore-master/activecore-master/designs/rtl/udm/tb/tb.sv:222]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NEXYS4_DDR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/1/activecore-master/activecore-master/designs/rtl/udm/hw/udm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/1/activecore-master/activecore-master/designs/rtl/udm/hw/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/1/activecore-master/activecore-master/designs/rtl/udm/hw/udm_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/1/activecore-master/activecore-master/designs/rtl/udm/hw/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/1/activecore-master/activecore-master/designs/rtl/reset_sync/reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/1/activecore-master/activecore-master/designs/rtl/ram/ram_dual_memsplit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual_memsplit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/1/activecore-master/activecore-master/designs/rtl/ram/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/1/activecore-master/activecore-master/designs/rtl/ram/ram_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/LFSR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 17 17:40:02 2024
+# Process ID: 5468
+# Current directory: C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15060 C:\1\activecore-master\activecore-master\designs\rtl\udm\syn\NEXYS4_DDR\NEXYS4_DDR.xpr
+# Log file: C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/vivado.log
+# Journal file: C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xpr
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+launch_simulation

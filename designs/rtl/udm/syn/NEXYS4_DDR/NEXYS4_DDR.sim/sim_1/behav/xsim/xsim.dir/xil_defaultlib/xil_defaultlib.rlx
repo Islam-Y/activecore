@@ -1,0 +1,18 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/1/activecore-master/activecore-master/designs/rtl/ram/ram.v,1725568853,verilog,,C:/1/activecore-master/activecore-master/designs/rtl/ram/ram_dual.v,,ram,,,,,,,,
+C:/1/activecore-master/activecore-master/designs/rtl/ram/ram_dual.v,1725568853,verilog,,C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/LFSR.v,,ram_dual,,,,,,,,
+C:/1/activecore-master/activecore-master/designs/rtl/ram/ram_dual_memsplit.v,1725568853,verilog,,C:/1/activecore-master/activecore-master/designs/rtl/ram/ram.v,,ram_dual_memsplit,,,,,,,,
+C:/1/activecore-master/activecore-master/designs/rtl/reset_sync/reset_sync.v,1725568853,verilog,,C:/1/activecore-master/activecore-master/designs/rtl/ram/ram_dual_memsplit.v,,reset_sync,,,,,,,,
+C:/1/activecore-master/activecore-master/designs/rtl/udm/hw/uart_rx.v,1725568853,verilog,,C:/1/activecore-master/activecore-master/designs/rtl/udm/hw/udm_controller.v,,uart_rx,,,,,,,,
+C:/1/activecore-master/activecore-master/designs/rtl/udm/hw/uart_tx.v,1725568853,verilog,,C:/1/activecore-master/activecore-master/designs/rtl/reset_sync/reset_sync.v,,uart_tx,,,,,,,,
+C:/1/activecore-master/activecore-master/designs/rtl/udm/hw/udm.v,1725568853,verilog,,C:/1/activecore-master/activecore-master/designs/rtl/udm/hw/uart_rx.v,,udm,,,,,,,,
+C:/1/activecore-master/activecore-master/designs/rtl/udm/hw/udm_controller.v,1725568853,verilog,,C:/1/activecore-master/activecore-master/designs/rtl/udm/hw/uart_tx.v,,udm_controller,,,,,,,,
+C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/LFSR.v,1729447692,verilog,,,,LFSR,,,,,,,,
+C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.ip_user_files/ip/sys_clk/sys_clk_sim_netlist.v,1728386682,verilog,,,,sys_clk;sys_clk_sys_clk_clk_wiz,,,,,,,,
+C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv,1729368649,systemVerilog,,,,MemSplit32;NEXYS4_DDR,,,,,,,,
+C:/1/activecore-master/activecore-master/designs/rtl/udm/tb/tb.sv,1729447631,systemVerilog,,C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv,C:/1/activecore-master/activecore-master/designs/rtl/udm/tb/udm.svh,tb,,,,,,,,
+C:/1/activecore-master/activecore-master/designs/rtl/udm/tb/udm.svh,1725568853,verilog,,,,,,,,,,,,
