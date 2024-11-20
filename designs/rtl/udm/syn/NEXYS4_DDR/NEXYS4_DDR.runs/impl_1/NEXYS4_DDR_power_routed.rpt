@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Tue Oct  8 15:00:06 2024
+| Date             : Wed Nov 13 14:09:35 2024
 | Host             : DESKTOP-RH5SH0Q running 64-bit major release  (build 9200)
 | Command          : report_power -file NEXYS4_DDR_power_routed.rpt -pb NEXYS4_DDR_power_summary_routed.pb -rpx NEXYS4_DDR_power_routed.rpx
 | Design           : NEXYS4_DDR
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        8 |       --- |             --- |
-| Slice Logic    |     0.001 |      926 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      354 |     63400 |            0.56 |
+| Slice Logic    |     0.001 |      985 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      379 |     63400 |            0.60 |
 |   CARRY4       |    <0.001 |       52 |     15850 |            0.33 |
-|   Register     |    <0.001 |      391 |    126800 |            0.31 |
+|   Register     |    <0.001 |      439 |    126800 |            0.35 |
 |   Others       |     0.000 |       14 |       --- |             --- |
-| Signals        |     0.001 |      756 |       --- |             --- |
+| Signals        |     0.001 |      802 |       --- |             --- |
 | Block RAM      |     0.002 |        1 |       135 |            0.74 |
 | MMCM           |     0.106 |        1 |         6 |           16.67 |
 | I/O            |    <0.001 |       36 |       210 |           17.14 |
@@ -151,7 +151,7 @@ Table of Contents
 |   sys_clk          |     0.106 |
 |     inst           |     0.106 |
 |   testmem          |     0.002 |
-|   udm              |     0.003 |
+|   udm              |     0.004 |
 |     uart_rx        |     0.001 |
 |     udm_controller |     0.002 |
 +--------------------+-----------+

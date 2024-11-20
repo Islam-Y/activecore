@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/1/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/sys_clk_synth_1'
+HD_PWD='C:/YAOP/activecore-master/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/sys_clk_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
