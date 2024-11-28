@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1731496104">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1732814975">
   <File Type="ROUTE-PWR" Name="NEXYS4_DDR_power_routed.rpt"/>
   <File Type="PA-TCL" Name="NEXYS4_DDR.tcl"/>
   <File Type="BITSTR-BMM" Name="NEXYS4_DDR_bd.bmm"/>
@@ -39,7 +39,6 @@
   <File Type="ROUTE-TIMING-PB" Name="NEXYS4_DDR_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="NEXYS4_DDR_timing_summary_routed.rpx"/>
   <File Type="ROUTE-CLK" Name="NEXYS4_DDR_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="NEXYS4_DDR.vdi"/>
   <File Type="ROUTE-BUS-SKEW" Name="NEXYS4_DDR_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="NEXYS4_DDR_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="NEXYS4_DDR_bus_skew_routed.rpx"/>
@@ -49,6 +48,7 @@
   <File Type="BITSTR-RBT" Name="NEXYS4_DDR.rbt"/>
   <File Type="BITSTR-NKY" Name="NEXYS4_DDR.nky"/>
   <File Type="BG-DRC" Name="NEXYS4_DDR.drc"/>
+  <File Type="RDI-RDI" Name="NEXYS4_DDR.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -121,6 +121,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/LFSR_Comb.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LFSR_Stage.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Nov 13 14:07:19 2024
-| Host         : DESKTOP-RH5SH0Q running 64-bit major release  (build 9200)
+| Date         : Thu Nov 28 20:29:29 2024
+| Host         : lab41 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file NEXYS4_DDR_utilization_synth.rpt -pb NEXYS4_DDR_utilization_synth.pb
 | Design       : NEXYS4_DDR
 | Device       : 7a100tcsg324-3
@@ -30,12 +30,12 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  381 |     0 |     63400 |  0.60 |
-|   LUT as Logic          |  381 |     0 |     63400 |  0.60 |
+| Slice LUTs*             | 2464 |     0 |     63400 |  3.89 |
+|   LUT as Logic          | 2464 |     0 |     63400 |  3.89 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |  423 |     0 |    126800 |  0.33 |
-|   Register as Flip Flop |  423 |     0 |    126800 |  0.33 |
-|   Register as Latch     |    0 |     0 |    126800 |  0.00 |
+| Slice Registers         | 3527 |     0 |    126800 |  2.78 |
+|   Register as Flip Flop | 2503 |     0 |    126800 |  1.97 |
+|   Register as Latch     | 1024 |     0 |    126800 |  0.81 |
 | F7 Muxes                |    0 |     0 |     31700 |  0.00 |
 | F8 Muxes                |    0 |     0 |     15850 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
@@ -54,10 +54,10 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 4     |          Yes |           - |          Set |
-| 0     |          Yes |           - |        Reset |
+| 1028  |          Yes |           - |          Set |
+| 2048  |          Yes |           - |        Reset |
 | 19    |          Yes |         Set |            - |
-| 400   |          Yes |       Reset |            - |
+| 432   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -147,18 +147,20 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  400 |        Flop & Latch |
-| LUT6     |  152 |                 LUT |
-| LUT3     |  111 |                 LUT |
-| LUT4     |  100 |                 LUT |
+| LUT4     | 2085 |                 LUT |
+| LUT3     | 1109 |                 LUT |
+| FDPE     | 1028 |        Flop & Latch |
+| LDCE     | 1024 |        Flop & Latch |
+| FDCE     | 1024 |        Flop & Latch |
+| FDRE     |  432 |        Flop & Latch |
+| LUT6     |  181 |                 LUT |
+| LUT2     |  108 |                 LUT |
+| LUT5     |   74 |                 LUT |
 | CARRY4   |   52 |          CarryLogic |
-| LUT2     |   43 |                 LUT |
-| LUT5     |   41 |                 LUT |
 | LUT1     |   34 |                 LUT |
 | FDSE     |   19 |        Flop & Latch |
 | IBUF     |   18 |                  IO |
 | OBUF     |   17 |                  IO |
-| FDPE     |    4 |        Flop & Latch |
 | RAMB36E1 |    1 |        Block Memory |
 +----------+------+---------------------+
 

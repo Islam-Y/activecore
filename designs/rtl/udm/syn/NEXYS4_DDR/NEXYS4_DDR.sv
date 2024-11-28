@@ -309,13 +309,36 @@ localparam TESTMEM_WSIZE        = 2**TESTMEM_WSIZE_POW;
 logic [31:0] seed;
 logic [31:0] lfsr_out;
 
+logic [31:0] out_stage;
 
-LFSR_Comb mod(
+LFSR_Pipeline pipe(
     .seed(seed),
     .lfsr_out(lfsr_out),
     .clk(clk_gen),
     .rst(srst)
 );
+
+LFSR_Stage stg(
+    .in_stage(lfsr_out),
+    .out_stage(out_stage),
+    .clk(clk_gen),
+    .rst(srst)
+);
+
+LFSR_MultiStage ms(
+    .seed(seed),
+    .lfsr_out(lfsr_out),
+    .clk(clk_gen),
+    .rst(srst)
+);
+
+
+LFSR_Comb mod(
+    .seed(seed),
+    .lfsr_out(lfsr_out)
+);
+
+
 
 logic udm_testmem_enb;
 assign udm_testmem_enb = ((udm_bus.addr >= TESTMEM_ADDR) && (udm_bus.addr < (TESTMEM_ADDR + (TESTMEM_WSIZE*4))));

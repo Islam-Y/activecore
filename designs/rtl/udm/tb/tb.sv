@@ -11,12 +11,12 @@
 
 `timescale 1ns / 1ps
 
-`define HALF_PERIOD			5						//external 100 MHZ
-`define DIVIDER_115200		32'd8680
-`define DIVIDER_19200		32'd52083
-`define DIVIDER_9600		32'd104166
-`define DIVIDER_4800		32'd208333
-`define DIVIDER_2400		32'd416666
+`define HALF_PERIOD            5                       // External 100 MHz clock
+`define DIVIDER_115200        32'd8680
+`define DIVIDER_19200         32'd52083
+`define DIVIDER_9600          32'd104166
+`define DIVIDER_4800          32'd208333
+`define DIVIDER_2400          32'd416666
 
 
 module tb ();
@@ -24,48 +24,52 @@ module tb ();
     logic rst;
     logic [31:0] seed;
     logic [31:0] lfsr_out;
-	
-	LFSR_Comb dut (
+    
+    LFSR_Pipeline dut (
         .clk(clk),        
         .rst(rst),       
         .seed(seed),
         .lfsr_out(lfsr_out)
-        );
-               
+    );
         
-      
+    LFSR_Stage stg(
+    .in_stage(lfsr_out),
+    .out_stage(out_stage),
+    .clk(clk_gen),
+    .rst(srst)
+);
+  
   initial begin
         clk = 0;
-        forever #5 clk = ~clk;  // ?????? = 10 ?????? ???????
+        forever #5 clk = ~clk;  // Clock period = 10 ns (100 MHz)
     end
 
-    // ???????? ????????
+    // Initial testbench setup
     initial begin
-        // ?????????????
+        // Reset the system
         rst = 1;
-        seed = 32'h1234FADC; // ????????? ?????????? ????????
+        seed = 32'h1234FADC; // Initial seed value for LFSR
 
-        // ?????
+        // Release reset after 10 ns
         #10 rst = 0;
 
-
-        // ?????????? ?? ????????????
-//        #350; // ????, ???? ?????????? ??????????
-        #750; // ????, ???? ?????????? ??????????
+        // Run simulation for a while
+//        #350; // Uncomment this line to run simulation for 350 ns
+        #750; // Run simulation for 750 ns
         $finish;
     end
 
-    // ?????????? ????? ????????
+    // Monitor and display LFSR output at each clock cycle
     always @(posedge clk) begin
        $monitor("At time %0t: LFSR Output = %h", $time, lfsr_out);
     end
-	
-	// ?????????????? ????? ????????? ??? ???????
+    
+    // Display the state of the LFSR at each clock cycle
     genvar i;
     generate
-        for (i = 0; i < 32; i = i + 1) begin : debug_state
+        for (i = 0; i < 32; i = i + 1) begin : debug_stage
             always @(posedge clk) begin
-                $display("At time %0t: State[%0d] = %h", $time, i, dut.state[i]);
+                $display("At time %0t: State[%0d] = %h", $time, i, dut.stage[i]);
             end
         end
     endgenerate
