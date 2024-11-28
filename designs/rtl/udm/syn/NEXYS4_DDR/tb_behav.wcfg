@@ -12,25 +12,56 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
-      <Cursor1Time time="1000000000fs"></Cursor1Time>
+      <ZoomEndTime time="73710548fs"></ZoomEndTime>
+      <Cursor1Time time="210000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="437"></NameColumnWidth>
-      <ValueColumnWidth column_width="263"></ValueColumnWidth>
+      <ValueColumnWidth column_width="253"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="3" />
-   <wvobject fp_name="/tb/lfsr_inst/seed" type="array">
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/tb/DUT/CLK100MHZ" type="logic">
+      <obj_property name="ElementShortName">CLK100MHZ</obj_property>
+      <obj_property name="ObjectShortName">CLK100MHZ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/CPU_RESETN" type="logic">
+      <obj_property name="ElementShortName">CPU_RESETN</obj_property>
+      <obj_property name="ObjectShortName">CPU_RESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/clk_gen" type="logic">
+      <obj_property name="ElementShortName">clk_gen</obj_property>
+      <obj_property name="ObjectShortName">clk_gen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/pll_locked" type="logic">
+      <obj_property name="ElementShortName">pll_locked</obj_property>
+      <obj_property name="ObjectShortName">pll_locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/arst" type="logic">
+      <obj_property name="ElementShortName">arst</obj_property>
+      <obj_property name="ObjectShortName">arst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/srst" type="logic">
+      <obj_property name="ElementShortName">srst</obj_property>
+      <obj_property name="ObjectShortName">srst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/udm_reset" type="logic">
+      <obj_property name="ElementShortName">udm_reset</obj_property>
+      <obj_property name="ObjectShortName">udm_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/seed" type="array">
       <obj_property name="ElementShortName">seed[31:0]</obj_property>
       <obj_property name="ObjectShortName">seed[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/lfsr_inst/lfsr_out" type="array">
+   <wvobject fp_name="/tb/DUT/lfsr_out" type="array">
       <obj_property name="ElementShortName">lfsr_out[31:0]</obj_property>
       <obj_property name="ObjectShortName">lfsr_out[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/lfsr_inst/stage" type="array">
-      <obj_property name="ElementShortName">stage[0:31][31:0]</obj_property>
-      <obj_property name="ObjectShortName">stage[0:31][31:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
+   <wvobject fp_name="/tb/DUT/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/udm_testmem_enb" type="logic">
+      <obj_property name="ElementShortName">udm_testmem_enb</obj_property>
+      <obj_property name="ObjectShortName">udm_testmem_enb</obj_property>
    </wvobject>
 </wave_config>
