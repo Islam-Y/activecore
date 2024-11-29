@@ -311,33 +311,39 @@ logic [31:0] lfsr_out;
 
 logic [31:0] out_stage;
 
-LFSR_Pipeline pipe(
-    .seed(seed),
-    .lfsr_out(lfsr_out),
-    .clk(clk_gen),
-    .rst(srst)
-);
+//__________________________________________________________________________
 
-LFSR_Stage stg(
-    .in_stage(lfsr_out),
-    .out_stage(out_stage),
-    .clk(clk_gen),
-    .rst(srst)
-);
+//lab4
+//LFSR_Pipeline pipe(
+//    .seed(seed),
+//    .lfsr_out(lfsr_out),
+//    .clk(clk_gen),
+//    .rst(srst)
+//);
 
+//LFSR_Stage stg(
+//    .in_stage(lfsr_out),
+//    .out_stage(out_stage),
+//    .clk(clk_gen),
+//    .rst(srst)
+//);
+//__________________________________________________________________________
+
+//lab3
 LFSR_MultiStage ms(
     .seed(seed),
     .lfsr_out(lfsr_out),
     .clk(clk_gen),
     .rst(srst)
 );
+//__________________________________________________________________________
 
-
-LFSR_Comb mod(
-    .seed(seed),
-    .lfsr_out(lfsr_out)
-);
-
+//lab2
+//LFSR_Comb mod(
+//    .seed(seed),
+//    .lfsr_out(lfsr_out)
+//);
+//__________________________________________________________________________
 
 
 logic udm_testmem_enb;

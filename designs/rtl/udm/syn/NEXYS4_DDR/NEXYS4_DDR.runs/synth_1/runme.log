@@ -15,11 +15,11 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-3
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12548 
+INFO: Helper process launched with PID 43240 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 754.020 ; gain = 177.980
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 821.656 ; gain = 178.801
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'NEXYS4_DDR' [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv:232]
+INFO: [Synth 8-6157] synthesizing module 'NEXYS4_DDR' [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv:232]
 	Parameter SIM bound to: NO - type: string 
 	Parameter UDM_BUS_TIMEOUT bound to: 104857600 - type: integer 
 	Parameter UDM_RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
@@ -30,17 +30,17 @@ INFO: [Synth 8-6157] synthesizing module 'NEXYS4_DDR' [C:/Users/user/Desktop/act
 	Parameter OUTPUT_ADDR bound to: 12 - type: integer 
 	Parameter TESTMEM_WSIZE_POW bound to: 10 - type: integer 
 	Parameter TESTMEM_WSIZE bound to: 1024 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sys_clk' [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-9936-lab41/realtime/sys_clk_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'sys_clk' (1#1) [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-9936-lab41/realtime/sys_clk_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'reset_sync' [C:/Users/user/Desktop/activecore/activecore/designs/rtl/reset_sync/reset_sync.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sys_clk' [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-39180-Islam/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'sys_clk' (1#1) [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-39180-Islam/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'reset_sync' [D:/HDL/lab/activecore/designs/rtl/reset_sync/reset_sync.v:1]
 	Parameter SYNC_STAGES bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'reset_sync' (2#1) [C:/Users/user/Desktop/activecore/activecore/designs/rtl/reset_sync/reset_sync.v:1]
-INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv:217]
-INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (2#1) [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv:217]
-INFO: [Synth 8-6157] synthesizing module 'udm' [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/hw/udm.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'reset_sync' (2#1) [D:/HDL/lab/activecore/designs/rtl/reset_sync/reset_sync.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv:217]
+INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (2#1) [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv:217]
+INFO: [Synth 8-6157] synthesizing module 'udm' [D:/HDL/lab/activecore/designs/rtl/udm/hw/udm.v:10]
 	Parameter BUS_TIMEOUT bound to: 104857600 - type: integer 
 	Parameter RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
-INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/hw/uart_rx.v:10]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/HDL/lab/activecore/designs/rtl/udm/hw/uart_rx.v:10]
 	Parameter RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
 	Parameter ST_NOSYNC bound to: 4'b0000 
 	Parameter ST_NOSYNC_WAIT1_1 bound to: 4'b0001 
@@ -56,17 +56,17 @@ INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/user/Desktop/active
 	Parameter ST_SYNC_WAIT_START bound to: 4'b1011 
 	Parameter ST_SYNC_RX_DATA bound to: 4'b1100 
 	Parameter ST_SYNC_WAIT_STOP bound to: 4'b1101 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/hw/uart_rx.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (3#1) [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/hw/uart_rx.v:10]
-INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/hw/uart_tx.v:10]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/HDL/lab/activecore/designs/rtl/udm/hw/uart_rx.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (3#1) [D:/HDL/lab/activecore/designs/rtl/udm/hw/uart_rx.v:10]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/HDL/lab/activecore/designs/rtl/udm/hw/uart_tx.v:10]
 	Parameter RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
 	Parameter ST_IDLE bound to: 8'b00000000 
 	Parameter ST_START bound to: 8'b00000001 
 	Parameter ST_TX_DATA bound to: 8'b00000010 
 	Parameter ST_STOP bound to: 8'b00000011 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/hw/uart_tx.v:53]
-INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (4#1) [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/hw/uart_tx.v:10]
-INFO: [Synth 8-6157] synthesizing module 'udm_controller' [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/hw/udm_controller.v:10]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/HDL/lab/activecore/designs/rtl/udm/hw/uart_tx.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (4#1) [D:/HDL/lab/activecore/designs/rtl/udm/hw/uart_tx.v:10]
+INFO: [Synth 8-6157] synthesizing module 'udm_controller' [D:/HDL/lab/activecore/designs/rtl/udm/hw/udm_controller.v:10]
 	Parameter BUS_TIMEOUT bound to: 104857600 - type: integer 
 	Parameter SYNC_BYTE bound to: 8'b01010101 
 	Parameter ESCAPE_BYTE bound to: 8'b01011010 
@@ -90,25 +90,24 @@ INFO: [Synth 8-6157] synthesizing module 'udm_controller' [C:/Users/user/Desktop
 	Parameter TX_RDATA bound to: 8'b00000110 
 	Parameter WAIT_TX bound to: 8'b00000111 
 	Parameter WAIT_RESP bound to: 8'b00001000 
-INFO: [Synth 8-6155] done synthesizing module 'udm_controller' (5#1) [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/hw/udm_controller.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'udm' (6#1) [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/hw/udm.v:10]
-INFO: [Synth 8-6157] synthesizing module 'LFSR_Comb' [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Comb.sv:133]
-INFO: [Synth 8-6157] synthesizing module 'LFSR_Stage' [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Stage.sv:23]
-WARNING: [Synth 8-5788] Register out_stage_reg in module LFSR_Stage is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Stage.sv:33]
-WARNING: [Synth 8-5788] Register feedback_reg in module LFSR_Stage is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Stage.sv:35]
-INFO: [Synth 8-6155] done synthesizing module 'LFSR_Stage' (7#1) [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Stage.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'LFSR_Comb' (8#1) [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Comb.sv:133]
-INFO: [Synth 8-6157] synthesizing module 'ram_dual' [C:/Users/user/Desktop/activecore/activecore/designs/rtl/ram/ram_dual.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'udm_controller' (5#1) [D:/HDL/lab/activecore/designs/rtl/udm/hw/udm_controller.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'udm' (6#1) [D:/HDL/lab/activecore/designs/rtl/udm/hw/udm.v:10]
+INFO: [Synth 8-6157] synthesizing module 'LFSR_MultiStage' [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_MultiStage.sv:23]
+WARNING: [Synth 8-639] system function call 'time' not supported [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_MultiStage.sv:48]
+INFO: [Synth 8-251] Time: 1'b0 | Counter: x | Feedback: 1'bx | Current State: xxxxxxxx | LFSR Output: xxxxxxxx [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_MultiStage.sv:47]
+WARNING: [Synth 8-5788] Register current_state_reg in module LFSR_MultiStage is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_MultiStage.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR_MultiStage' (7#1) [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_MultiStage.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual' [D:/HDL/lab/activecore/designs/rtl/ram/ram_dual.v:1]
 	Parameter init_type bound to: none - type: string 
 	Parameter init_data bound to: nodata.hex - type: string 
 	Parameter dat_width bound to: 32 - type: integer 
 	Parameter adr_width bound to: 10 - type: integer 
 	Parameter mem_size bound to: 1024 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'ram_dual' (9#1) [C:/Users/user/Desktop/activecore/activecore/designs/rtl/ram/ram_dual.v:1]
-WARNING: [Synth 8-689] width (30) of port connection 'adr0_i' does not match port width (10) of module 'ram_dual' [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv:353]
-INFO: [Synth 8-6155] done synthesizing module 'NEXYS4_DDR' (10#1) [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv:232]
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual' (8#1) [D:/HDL/lab/activecore/designs/rtl/ram/ram_dual.v:1]
+WARNING: [Synth 8-689] width (30) of port connection 'adr0_i' does not match port width (10) of module 'ram_dual' [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv:373]
+INFO: [Synth 8-6155] done synthesizing module 'NEXYS4_DDR' (9#1) [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv:232]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 819.598 ; gain = 243.559
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 886.289 ; gain = 243.434
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -121,46 +120,46 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 819.598 ; gain = 243.559
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 886.289 ; gain = 243.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 819.598 ; gain = 243.559
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 886.289 ; gain = 243.434
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-9936-lab41/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
-Finished Parsing XDC File [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-9936-lab41/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
-Parsing XDC File [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
-Finished Parsing XDC File [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NEXYS4_DDR_propImpl.xdc].
+Parsing XDC File [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-39180-Islam/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
+Finished Parsing XDC File [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-39180-Islam/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
+Parsing XDC File [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
+Finished Parsing XDC File [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NEXYS4_DDR_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/NEXYS4_DDR_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 960.219 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1023.957 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 960.219 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1023.957 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 960.219 ; gain = 384.180
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1023.957 ; gain = 381.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 960.219 ; gain = 384.180
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1023.957 ; gain = 381.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-9936-lab41/sys_clk/sys_clk/sys_clk_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-9936-lab41/sys_clk/sys_clk/sys_clk_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-39180-Islam/sys_clk/sys_clk/sys_clk_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-39180-Islam/sys_clk/sys_clk/sys_clk_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for sys_clk. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 960.219 ; gain = 384.180
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1023.957 ; gain = 381.102
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
@@ -208,7 +207,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'udm_controller'
 INFO: [Synth 8-3971] The signal "ram_dual:/ram_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 960.219 ; gain = 384.180
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1023.957 ; gain = 381.102
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -222,23 +221,25 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 5     
+	   2 Input      6 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
-	   6 Input      1 Bit         XORs := 33    
+	   6 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 44    
+	               32 Bit    Registers := 13    
 	               29 Bit    Registers := 1     
 	               16 Bit    Registers := 1     
 	                8 Bit    Registers := 6     
+	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 56    
+	                1 Bit    Registers := 23    
 +---RAMs : 
 	              32K Bit         RAMs := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 71    
+	   2 Input     32 Bit        Muxes := 7     
 	  14 Input     32 Bit        Muxes := 1     
 	   4 Input     32 Bit        Muxes := 1     
 	   8 Input     32 Bit        Muxes := 5     
@@ -342,13 +343,15 @@ Detailed RTL Component Info :
 	   3 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 2     
 	   8 Input      1 Bit        Muxes := 22    
-Module LFSR_Stage 
+Module LFSR_MultiStage 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
 +---XORs : 
 	   6 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
 Module ram_dual 
@@ -376,7 +379,7 @@ Warning: Parallel synthesis criteria is not met
 WARNING: [Synth 8-6014] Unused sequential element testmem/ram_reg was removed. 
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\udm/udm_controller/tx_irq_reg )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 960.219 ; gain = 384.180
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1023.957 ; gain = 381.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -406,13 +409,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'sys_clk/clk_out1' to pin 'sys_clk/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 960.219 ; gain = 384.180
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1023.957 ; gain = 381.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 977.465 ; gain = 401.426
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1037.855 ; gain = 395.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -439,7 +442,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6837] The timing for the instance testmem/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 987.055 ; gain = 411.016
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1045.121 ; gain = 402.266
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -463,7 +466,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 992.027 ; gain = 415.988
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1049.891 ; gain = 407.035
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -476,7 +479,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 992.027 ; gain = 415.988
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1049.891 ; gain = 407.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -488,25 +491,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 992.027 ; gain = 415.988
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1049.891 ; gain = 407.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 992.027 ; gain = 415.988
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1049.891 ; gain = 407.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 992.031 ; gain = 415.992
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1049.914 ; gain = 407.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 992.031 ; gain = 415.992
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1049.914 ; gain = 407.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -525,90 +528,58 @@ Report Cell Usage:
 +------+---------+------+
 |1     |sys_clk  |     1|
 |2     |CARRY4   |    52|
-|3     |LUT1     |    34|
-|4     |LUT2     |   108|
-|5     |LUT3     |  1109|
-|6     |LUT4     |  2085|
-|7     |LUT5     |    74|
-|8     |LUT6     |   181|
+|3     |LUT1     |    36|
+|4     |LUT2     |   123|
+|5     |LUT3     |   162|
+|6     |LUT4     |   114|
+|7     |LUT5     |    83|
+|8     |LUT6     |   132|
 |9     |RAMB36E1 |     1|
-|10    |FDCE     |  1024|
-|11    |FDPE     |  1028|
+|10    |FDCE     |    38|
+|11    |FDPE     |    36|
 |12    |FDRE     |   432|
 |13    |FDSE     |    19|
-|14    |LDC      |  1024|
+|14    |LDC      |    32|
 |15    |IBUF     |    18|
 |16    |OBUF     |    17|
 +------+---------+------+
 
 Report Instance Areas: 
-+------+-------------------------------+---------------+------+
-|      |Instance                       |Module         |Cells |
-+------+-------------------------------+---------------+------+
-|1     |top                            |               |  7208|
-|2     |  mod                          |LFSR_Comb      |  6145|
-|3     |    \pipeline_stage[0].stage   |LFSR_Stage     |   196|
-|4     |    \pipeline_stage[10].stage  |LFSR_Stage_0   |   194|
-|5     |    \pipeline_stage[11].stage  |LFSR_Stage_1   |   194|
-|6     |    \pipeline_stage[12].stage  |LFSR_Stage_2   |   194|
-|7     |    \pipeline_stage[13].stage  |LFSR_Stage_3   |   194|
-|8     |    \pipeline_stage[14].stage  |LFSR_Stage_4   |   194|
-|9     |    \pipeline_stage[15].stage  |LFSR_Stage_5   |   194|
-|10    |    \pipeline_stage[16].stage  |LFSR_Stage_6   |   194|
-|11    |    \pipeline_stage[17].stage  |LFSR_Stage_7   |   194|
-|12    |    \pipeline_stage[18].stage  |LFSR_Stage_8   |   194|
-|13    |    \pipeline_stage[19].stage  |LFSR_Stage_9   |   194|
-|14    |    \pipeline_stage[1].stage   |LFSR_Stage_10  |   194|
-|15    |    \pipeline_stage[20].stage  |LFSR_Stage_11  |   194|
-|16    |    \pipeline_stage[21].stage  |LFSR_Stage_12  |   194|
-|17    |    \pipeline_stage[22].stage  |LFSR_Stage_13  |   194|
-|18    |    \pipeline_stage[23].stage  |LFSR_Stage_14  |   194|
-|19    |    \pipeline_stage[24].stage  |LFSR_Stage_15  |   194|
-|20    |    \pipeline_stage[25].stage  |LFSR_Stage_16  |   194|
-|21    |    \pipeline_stage[26].stage  |LFSR_Stage_17  |   194|
-|22    |    \pipeline_stage[27].stage  |LFSR_Stage_18  |   194|
-|23    |    \pipeline_stage[28].stage  |LFSR_Stage_19  |   194|
-|24    |    \pipeline_stage[29].stage  |LFSR_Stage_20  |   194|
-|25    |    \pipeline_stage[2].stage   |LFSR_Stage_21  |   194|
-|26    |    \pipeline_stage[30].stage  |LFSR_Stage_22  |   194|
-|27    |    \pipeline_stage[31].stage  |LFSR_Stage_23  |   129|
-|28    |    \pipeline_stage[3].stage   |LFSR_Stage_24  |   194|
-|29    |    \pipeline_stage[4].stage   |LFSR_Stage_25  |   194|
-|30    |    \pipeline_stage[5].stage   |LFSR_Stage_26  |   194|
-|31    |    \pipeline_stage[6].stage   |LFSR_Stage_27  |   194|
-|32    |    \pipeline_stage[7].stage   |LFSR_Stage_28  |   194|
-|33    |    \pipeline_stage[8].stage   |LFSR_Stage_29  |   194|
-|34    |    \pipeline_stage[9].stage   |LFSR_Stage_30  |   194|
-|35    |  reset_sync                   |reset_sync     |    70|
-|36    |  testmem                      |ram_dual       |     1|
-|37    |  udm                          |udm            |   872|
-|38    |    uart_rx                    |uart_rx        |   205|
-|39    |    uart_tx                    |uart_tx        |   120|
-|40    |    udm_controller             |udm_controller |   547|
-+------+-------------------------------+---------------+------+
++------+-------------------+----------------+------+
+|      |Instance           |Module          |Cells |
++------+-------------------+----------------+------+
+|1     |top                |                |  1297|
+|2     |  ms               |LFSR_MultiStage |   222|
+|3     |  reset_sync       |reset_sync      |    71|
+|4     |  testmem          |ram_dual        |     9|
+|5     |  udm              |udm             |   875|
+|6     |    uart_rx        |uart_rx         |   199|
+|7     |    uart_tx        |uart_tx         |   124|
+|8     |    udm_controller |udm_controller  |   552|
++------+-------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 992.031 ; gain = 415.992
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1049.914 ; gain = 407.059
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 992.031 ; gain = 275.371
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 992.031 ; gain = 415.992
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1049.914 ; gain = 269.391
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1049.914 ; gain = 407.059
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1077 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 85 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 999.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1050.320 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1024 instances were transformed.
-  LDC => LDCE: 1024 instances
+  A total of 32 instances were transformed.
+  LDC => LDCE: 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-48 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+47 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 999.297 ; gain = 682.527
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 999.297 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1050.320 ; gain = 662.961
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1050.320 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Desktop/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/NEXYS4_DDR.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/NEXYS4_DDR.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file NEXYS4_DDR_utilization_synth.rpt -pb NEXYS4_DDR_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 28 20:29:29 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 29 08:44:48 2024...

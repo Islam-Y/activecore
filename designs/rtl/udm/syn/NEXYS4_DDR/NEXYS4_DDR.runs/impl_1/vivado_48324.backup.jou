@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Nov 29 08:46:42 2024
-# Process ID: 56524
+# Start of session at: Fri Nov 29 08:45:11 2024
+# Process ID: 48324
 # Current directory: D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1
 # Command line: vivado.exe -log NEXYS4_DDR.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source NEXYS4_DDR.tcl -notrace
 # Log file: D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.vdi

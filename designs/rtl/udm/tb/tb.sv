@@ -25,101 +25,113 @@ module tb ();
     logic [31:0] seed;
     logic [31:0] lfsr_out;
     
-    LFSR_Pipeline dut (
-        .clk(clk),        
-        .rst(rst),       
-        .seed(seed),
-        .lfsr_out(lfsr_out)
-    );
+//__________________________________________________________________________
+// The object of LFSR, lab4
+//    LFSR_Pipeline dut (
+//        .clk(clk),        
+//        .rst(rst),       
+//        .seed(seed),
+//        .lfsr_out(lfsr_out)
+//    );
         
-    LFSR_Stage stg(
-    .in_stage(lfsr_out),
-    .out_stage(out_stage),
-    .clk(clk_gen),
-    .rst(srst)
-);
+//    LFSR_Stage stg(
+//    .in_stage(lfsr_out),
+//    .out_stage(out_stage),
+//    .clk(clk_gen),
+//    .rst(srst)
+//);
   
-  initial begin
-        clk = 0;
-        forever #5 clk = ~clk;  // Clock period = 10 ns (100 MHz)
-    end
+//  initial begin
+//        clk = 0;
+//        forever #5 clk = ~clk;  // Clock period = 10 ns (100 MHz)
+//    end
 
-    // Initial testbench setup
-    initial begin
-        // Reset the system
-        rst = 1;
-        seed = 32'h1234FADC; // Initial seed value for LFSR
+//    // Initial testbench setup
+//    initial begin
+//        // Reset the system
+//        rst = 1;
+//        seed = 32'h1234FADC; // Initial seed value for LFSR
 
-        // Release reset after 10 ns
-        #10 rst = 0;
+//        // Release reset after 10 ns
+//        #10 rst = 0;
 
-        // Run simulation for a while
-//        #350; // Uncomment this line to run simulation for 350 ns
-        #750; // Run simulation for 750 ns
-        $finish;
-    end
+//        // Run simulation for a while
+//        #750; // Run simulation for 750 ns
+//        $finish;
+//    end
 
-    // Monitor and display LFSR output at each clock cycle
-    always @(posedge clk) begin
-       $monitor("At time %0t: LFSR Output = %h", $time, lfsr_out);
-    end
+//    // Monitor and display LFSR output at each clock cycle
+//    always @(posedge clk) begin
+//       $monitor("At time %0t: LFSR Output = %h", $time, lfsr_out);
+//    end
     
-    // Display the state of the LFSR at each clock cycle
-    genvar i;
-    generate
-        for (i = 0; i < 32; i = i + 1) begin : debug_stage
-            always @(posedge clk) begin
-                $display("At time %0t: State[%0d] = %h", $time, i, dut.stage[i]);
-            end
-        end
-    endgenerate
-	
-	
-	
-	
+//    // Display the state of the LFSR at each clock cycle
+//    genvar i;
+//    generate
+//        for (i = 0; i < 32; i = i + 1) begin : debug_stage
+//            always @(posedge clk) begin
+//                $display("At time %0t: State[%0d] = %h", $time, i, dut.stage[i]);
+//            end
+//        end
+//    endgenerate
+//	endmodule
+//The end of the tb of lab4
+//__________________________________________________________________________
+
+
+// The object of LFSR, lab3
+LFSR_MultiStage ms (
+    .clk(clk),       // Connect the clock signal to the LFSR module
+    .rst(rst),       // Connect the reset signal to the LFSR module
+    .seed(seed),     // Pass the seed value to initialize the LFSR
+    .lfsr_out(lfsr_out) // Output the final LFSR value
+);
+
+  // Clock generation logic
+  initial begin
+      clk = 0;
+      forever #5 clk = ~clk;  // Clock period = 10 time units
+  end
+
+  // Testbench stimulus
+  initial begin
+      // Initialization
+      rst = 1;                   // Assert reset
+      seed = 32'h1234FADC;       // Set the seed value for the LFSR
+
+      // Start simulation
+      #10 rst = 0;               // De-assert reset after 10 time units
+
+      // Run the simulation for a sufficient time
+      #350; // Wait for the LFSR to complete a few cycles
+      $finish; // End the simulation
+  end
+
+  // Display LFSR state and debug information at every positive clock edge
+  always @(posedge clk) begin
+      $display("Time: %0t | Counter: %0d | Feedback: %b | Current State: %h | LFSR Output: %h",
+               $time, ms.counter, ms.feedback, ms.current_state, lfsr_out);
+  end
+endmodule
+//The end of the tb of lab4
+//__________________________________________________________________________
+
+
 // The object of LFSR, lab2
 //LFSR_Comb lfsr_inst (
-//    .clk(clk),       // Connect the clock signal to the LFSR module
-//    .rst(rst),       // Connect the reset signal to the LFSR module
 //    .seed(seed),     // Pass the seed value to initialize the LFSR
 //    .lfsr_out(lfsr_out) // Output the final LFSR value
 //);
 
-//  // Clock generation logic
-//  initial begin
-//      clk = 0;
-//      forever #5 clk = ~clk;  // Clock period = 10 time units
-//  end
-
-//  // Testbench stimulus
-//  initial begin
-//      // Initialization
-//      rst = 1;                   // Assert reset
-//      seed = 32'h1234FADC;       // Set the seed value for the LFSR
-
-//      // Start simulation
-//      #10 rst = 0;               // De-assert reset after 10 time units
-
-//      // Run the simulation for a sufficient time
-//      #350; // Wait for the LFSR to complete a few cycles
-//      $finish; // End the simulation
-//  end
-
-//  // Display LFSR state and debug information at every positive clock edge
-//  always @(posedge clk) begin
-//      $display("Time: %0t | Counter: %0d | Feedback: %b | Current State: %h | LFSR Output: %h",
-//               $time, lfsr_inst.counter, lfsr_inst.feedback, lfsr_inst.current_state, lfsr_out);
-//  end
-  
-  
-
-// Combination logic (Optional for additional tests)
 // initial begin
-//     seed = 32'b11111111111111111111111111111111; // Example seed values
-//     #10;
-//end
+//    seed = 32'h1234FADC;
+//    #10;
+//    end
+//endmodule
+//The end of the tb of lab2
+//__________________________________________________________________________
 
-endmodule
+
 
 // Example seed values:
 // seed = 0x00000001; // Binary: 00000000000000000000000000000001
