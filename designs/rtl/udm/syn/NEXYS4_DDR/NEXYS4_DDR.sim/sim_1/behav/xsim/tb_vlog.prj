@@ -21,6 +21,7 @@ sv xil_defaultlib  \
 "../../../../NEXYS4_DDR.srcs/sources_1/new/LFSR_Stage.sv" \
 "../../../../NEXYS4_DDR.srcs/sources_1/new/LFSR_Pipeline.sv" \
 "../../../../NEXYS4_DDR.srcs/sources_1/new/LFSR_MultiStage.sv" \
+"../../../../NEXYS4_DDR.srcs/sources_1/new/LFSR_Core.sv" \
 "../../../../NEXYS4_DDR.srcs/sim_1/new/mod_tb.sv" \
 
 # compile glbl module
