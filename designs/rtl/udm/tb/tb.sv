@@ -24,6 +24,8 @@ module tb ();
     logic rst;
     logic [31:0] seed;
     logic [31:0] lfsr_out;
+    logic start;
+    logic busy;
     
 //__________________________________________________________________________
 // The object of LFSR, lab4
@@ -84,7 +86,9 @@ LFSR_MultiStage ms (
     .clk(clk),       // Connect the clock signal to the LFSR module
     .rst(rst),       // Connect the reset signal to the LFSR module
     .seed(seed),     // Pass the seed value to initialize the LFSR
-    .lfsr_out(lfsr_out) // Output the final LFSR value
+    .lfsr_out(lfsr_out), // Output the final LFSR value
+    .start (start),
+    .busy (busy)
 );
 
   // Clock generation logic
@@ -96,11 +100,16 @@ LFSR_MultiStage ms (
   // Testbench stimulus
   initial begin
       // Initialization
-      rst = 1;                   // Assert reset
-      seed = 32'h1234FADC;       // Set the seed value for the LFSR
+      rst <= 1;                   // Assert reset
+      seed <= 32'h1234FADC;       // Set the seed value for the LFSR
+      start <= 0;
+      
 
       // Start simulation
-      #10 rst = 0;               // De-assert reset after 10 time units
+      #10 rst <= 0;               // De-assert reset after 10 time units
+      start <=  1;
+      #10
+      start <= 0;
 
       // Run the simulation for a sufficient time
       #350; // Wait for the LFSR to complete a few cycles
@@ -113,7 +122,7 @@ LFSR_MultiStage ms (
                $time, ms.counter, ms.feedback, ms.current_state, lfsr_out);
   end
 endmodule
-//The end of the tb of lab4
+//The end of the tb of lab3
 //__________________________________________________________________________
 
 

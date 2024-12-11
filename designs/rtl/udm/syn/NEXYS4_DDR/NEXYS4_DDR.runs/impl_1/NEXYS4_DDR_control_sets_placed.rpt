@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Nov 29 08:45:43 2024
-| Host         : Islam running 64-bit major release  (build 9200)
+| Date         : Wed Dec 11 17:37:32 2024
+| Host         : lab41 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file NEXYS4_DDR_control_sets_placed.rpt
 | Design       : NEXYS4_DDR
 | Device       : xc7a100t
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |   122 |
-|    Minimum number of control sets                        |   122 |
+| Total control sets                                       |    28 |
+|    Minimum number of control sets                        |    28 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   707 |
+| Unused register locations in slices containing registers |    33 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |   122 |
-| >= 0 to < 4        |    97 |
+| Total control sets |    28 |
+| >= 0 to < 4        |     1 |
 | >= 4 to < 6        |     2 |
 | >= 6 to < 8        |     2 |
 | >= 8 to < 10       |     7 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     1 |
-| >= 14 to < 16      |     0 |
-| >= 16              |    13 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    14 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,143 +58,49 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              44 |           13 |
-| No           | No                    | Yes                    |              36 |           34 |
-| No           | Yes                   | No                     |              62 |           47 |
-| Yes          | No                    | No                     |              80 |           19 |
-| Yes          | No                    | Yes                    |              38 |           33 |
-| Yes          | Yes                   | No                     |             313 |           75 |
+| No           | No                    | No                     |              14 |           11 |
+| No           | No                    | Yes                    |               4 |            2 |
+| No           | Yes                   | No                     |              30 |           14 |
+| Yes          | No                    | No                     |              80 |           20 |
+| Yes          | No                    | Yes                    |              70 |           13 |
+| Yes          | Yes                   | No                     |             313 |           90 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------------------+------------------------------------------------+----------------------------------------------------+------------------+----------------+
-|             Clock Signal            |                  Enable Signal                 |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count |
-+-------------------------------------+------------------------------------------------+----------------------------------------------------+------------------+----------------+
-|  reset_sync/reset_syncbuf_reg[0]_1  |                                                | reset_sync/reset_syncbuf_reg[0]_2                  |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_11 |                                                | reset_sync/reset_syncbuf_reg[0]_12                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_15 |                                                | reset_sync/reset_syncbuf_reg[0]_16                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_17 |                                                | reset_sync/reset_syncbuf_reg[0]_18                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_13 |                                                | reset_sync/reset_syncbuf_reg[0]_14                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_19 |                                                | reset_sync/reset_syncbuf_reg[0]_20                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_21 |                                                | reset_sync/reset_syncbuf_reg[0]_22                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_5  |                                                | reset_sync/reset_syncbuf_reg[0]_6                  |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_7  |                                                | reset_sync/reset_syncbuf_reg[0]_8                  |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_33 |                                                | reset_sync/reset_syncbuf_reg[0]_34                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_29 |                                                | reset_sync/reset_syncbuf_reg[0]_30                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_3  |                                                | reset_sync/reset_syncbuf_reg[0]_4                  |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_35 |                                                | reset_sync/reset_syncbuf_reg[0]_36                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_37 |                                                | reset_sync/reset_syncbuf_reg[0]_38                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_51 |                                                | reset_sync/reset_syncbuf_reg[0]_52                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_61 |                                                | reset_sync/reset_syncbuf_reg[0]_62                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_47 |                                                | reset_sync/reset_syncbuf_reg[0]_48                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_27 |                                                | reset_sync/reset_syncbuf_reg[0]_28                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_55 |                                                | reset_sync/reset_syncbuf_reg[0]_56                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_31 |                                                | reset_sync/reset_syncbuf_reg[0]_32                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_39 |                                                | reset_sync/reset_syncbuf_reg[0]_40                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_25 |                                                | reset_sync/reset_syncbuf_reg[0]_26                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_63 |                                                | reset_sync/reset_syncbuf_reg[0]_64                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_45 |                                                | reset_sync/reset_syncbuf_reg[0]_46                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_49 |                                                | reset_sync/reset_syncbuf_reg[0]_50                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_57 |                                                | reset_sync/reset_syncbuf_reg[0]_58                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_59 |                                                | reset_sync/reset_syncbuf_reg[0]_60                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_43 |                                                | reset_sync/reset_syncbuf_reg[0]_44                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_23 |                                                | reset_sync/reset_syncbuf_reg[0]_24                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_53 |                                                | reset_sync/reset_syncbuf_reg[0]_54                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_9  |                                                | reset_sync/reset_syncbuf_reg[0]_10                 |                1 |              1 |
-|  reset_sync/reset_syncbuf_reg[0]_41 |                                                | reset_sync/reset_syncbuf_reg[0]_42                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_43                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_23                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_53                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_10                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_12                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_9                  |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_18                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_2                  |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_20                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_14                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_16                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_28                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_42                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_8                  |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_50                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_58                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_41                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_40                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_48                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_22                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_46                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_4                  |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_54                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_30                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_36                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_52                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_64                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_32                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_26                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_34                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_44                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_56                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_62                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_60                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_38                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_6                  |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/reset_syncbuf_reg[0]_24                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | udm/uart_tx/tx_o_i_1_n_0                       | reset_sync/Q[0]                                    |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_1                  |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_11                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_15                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_17                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_13                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_19                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_21                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_5                  |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_7                  |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_33                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_29                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_3                  |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_35                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_37                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_51                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_61                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_47                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_27                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_55                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_31                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_39                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_25                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_63                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_45                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_49                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_57                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/reset_syncbuf_reg[0]_59                 |                1 |              1 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/arst                                    |                2 |              4 |
-|  sys_clk/inst/clk_out1              | udm/uart_rx/FSM_sequential_state[3]_i_1_n_0    | reset_sync/Q[0]                                    |                1 |              4 |
-|  sys_clk/inst/clk_out1              | udm/udm_controller/reset_syncbuf_reg[0]        | reset_sync/reset_syncbuf_reg[0]_65                 |                2 |              6 |
-|  sys_clk/inst/clk_out1              | ms/sel                                         | reset_sync/Q[0]                                    |                1 |              6 |
-|  sys_clk/inst/clk_out1              |                                                | udm/uart_rx/SR[0]                                  |                2 |              8 |
-|  sys_clk/inst/clk_out1              | udm/udm_controller/tx_sendbyte_ff_0            |                                                    |                2 |              8 |
-|  sys_clk/inst/clk_out1              | udm/udm_controller/tx_sendbyte[7]_i_2_n_0      | udm/udm_controller/tx_sendbyte[7]_i_1_n_0          |                4 |              8 |
-|  sys_clk/inst/clk_out1              | udm/uart_tx/databuf_0                          | reset_sync/Q[0]                                    |                2 |              8 |
-|  sys_clk/inst/clk_out1              | udm/udm_controller/RD_DATA_reg[23]_i_1_n_0     | udm/udm_controller/RD_DATA_reg[31]_i_1_n_0         |                3 |              8 |
-|  sys_clk/inst/clk_out1              | udm/uart_rx/dout_bo[7]_i_1_n_0                 | reset_sync/Q[0]                                    |                2 |              8 |
-|  sys_clk/inst/clk_out1              |                                                | udm/udm_controller/FSM_sequential_state[2]_i_1_n_0 |                7 |              9 |
-|  sys_clk/inst/clk_out1              |                                                | reset_sync/Q[0]                                    |                6 |             13 |
-|  sys_clk/inst/clk_out1              | udm/udm_controller/bus_addr_bo_reg[2]_0        |                                                    |                4 |             16 |
-|  sys_clk/inst/clk_out1              | udm/udm_controller/bus_addr_bo_reg[2]_0        | udm/udm_controller/bus_addr_bo_reg[3]_1            |                2 |             16 |
-|  sys_clk/inst/clk_out1              | udm/udm_controller/RD_DATA_reg[23]_i_1_n_0     |                                                    |                7 |             24 |
-|  sys_clk/inst/clk_out1              | udm/uart_rx/bitperiod_o[28]_i_1_n_0            | reset_sync/Q[0]                                    |                8 |             30 |
-|  sys_clk/inst/clk_out1              | udm/udm_controller/timeout_counter[31]_i_2_n_0 | udm/udm_controller/timeout_counter[31]_i_1_n_0     |                9 |             32 |
-|  sys_clk/inst/clk_out1              | udm/udm_controller/tr_length[31]_i_2_n_0       | udm/udm_controller/tr_length[31]_i_1_n_0           |               11 |             32 |
-|  sys_clk/inst/clk_out1              | udm/udm_controller/E[0]                        |                                                    |                6 |             32 |
-|  sys_clk/inst/clk_out1              | udm/udm_controller/bus_addr_bo_reg[3]_0[0]     | reset_sync/Q[0]                                    |                6 |             32 |
-|  sys_clk/inst/clk_out1              | udm/uart_tx/clk_counter                        | reset_sync/Q[0]                                    |                6 |             32 |
-|  sys_clk/inst/clk_out1              | udm/udm_controller/bus_addr_bo[31]_i_1_n_0     | udm/udm_controller/FSM_sequential_state[2]_i_1_n_0 |                8 |             32 |
-|  sys_clk/inst/clk_out1              | udm/udm_controller/bus_wdata_bo[31]_i_1_n_0    | udm/udm_controller/FSM_sequential_state[2]_i_1_n_0 |                4 |             32 |
-|  sys_clk/inst/clk_out1              | udm/uart_rx/clk_counter                        | reset_sync/Q[0]                                    |                6 |             32 |
-|  sys_clk/inst/clk_out1              |                                                |                                                    |               13 |             44 |
-+-------------------------------------+------------------------------------------------+----------------------------------------------------+------------------+----------------+
++------------------------+------------------------------------------------+----------------------------------------------------+------------------+----------------+
+|      Clock Signal      |                  Enable Signal                 |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++------------------------+------------------------------------------------+----------------------------------------------------+------------------+----------------+
+|  sys_clk/inst/clk_out1 | udm/uart_tx/tx_o_i_1_n_0                       | reset_sync/Q[0]                                    |                1 |              1 |
+|  sys_clk/inst/clk_out1 |                                                | reset_sync/arst                                    |                2 |              4 |
+|  sys_clk/inst/clk_out1 | udm/uart_rx/FSM_sequential_state[3]_i_1_n_0    | reset_sync/Q[0]                                    |                1 |              4 |
+|  sys_clk/inst/clk_out1 | ms/counter_0                                   | reset_signal_reg_n_0                               |                3 |              6 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/reset_syncbuf_reg[0]        | reset_sync/reset_syncbuf_reg[0]_2                  |                3 |              6 |
+|  sys_clk/inst/clk_out1 |                                                | udm/uart_rx/SR[0]                                  |                1 |              8 |
+|  sys_clk/inst/clk_out1 | udm/uart_rx/dout_bo[7]_i_1_n_0                 | reset_sync/Q[0]                                    |                2 |              8 |
+|  sys_clk/inst/clk_out1 | udm/uart_tx/databuf_0                          | reset_sync/Q[0]                                    |                3 |              8 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/RD_DATA_reg[23]_i_1_n_0     | udm/udm_controller/RD_DATA_reg[31]_i_1_n_0         |                2 |              8 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/tx_sendbyte[7]_i_2_n_0      | udm/udm_controller/tx_sendbyte[7]_i_1_n_0          |                2 |              8 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/tx_sendbyte_ff[7]_i_1_n_0   |                                                    |                2 |              8 |
+|  sys_clk/inst/clk_out1 |                                                | udm/udm_controller/FSM_sequential_state[2]_i_1_n_0 |                6 |              9 |
+|  sys_clk/inst/clk_out1 |                                                | reset_sync/Q[0]                                    |                7 |             13 |
+|  sys_clk/inst/clk_out1 |                                                |                                                    |               11 |             14 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_we_o_reg_1              |                                                    |                6 |             16 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_we_o_reg_1              | udm/udm_controller/bus_addr_bo_reg[0]_0            |                4 |             16 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/RD_DATA_reg[23]_i_1_n_0     |                                                    |                7 |             24 |
+|  sys_clk/inst/clk_out1 | udm/uart_rx/bitperiod_o[28]_i_1_n_0            | reset_sync/Q[0]                                    |               10 |             30 |
+|  sys_clk/inst/clk_out1 | udm/uart_tx/clk_counter                        | reset_sync/Q[0]                                    |                5 |             32 |
+|  sys_clk/inst/clk_out1 | ms/lfsr_out0                                   | reset_signal_reg_n_0                               |                6 |             32 |
+|  sys_clk/inst/clk_out1 | ms/current_state0                              | reset_signal_reg_n_0                               |                4 |             32 |
+|  sys_clk/inst/clk_out1 | udm/uart_rx/clk_counter                        | reset_sync/Q[0]                                    |                9 |             32 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_addr_bo[31]_i_1_n_0     | udm/udm_controller/FSM_sequential_state[2]_i_1_n_0 |               10 |             32 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_wdata_bo[31]_i_1_n_0    | udm/udm_controller/FSM_sequential_state[2]_i_1_n_0 |                6 |             32 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/timeout_counter[31]_i_2_n_0 | udm/udm_controller/timeout_counter[31]_i_1_n_0     |                9 |             32 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/tr_length[31]_i_2_n_0       | udm/udm_controller/tr_length[31]_i_1_n_0           |               15 |             32 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/E[0]                        |                                                    |                5 |             32 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_we_o_reg_0[0]           | reset_sync/Q[0]                                    |                8 |             32 |
++------------------------+------------------------------------------------+----------------------------------------------------+------------------+----------------+
 
 

@@ -23,34 +23,35 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.cache/wt [current_project]
-set_property parent.project_path D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.cache/wt [current_project]
+set_property parent.project_path C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.cache/ip [current_project]
+set_property ip_output_repo c:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
-  D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv
-  D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Comb.sv
-  D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Stage.sv
-  D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Pipeline.sv
-  D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_MultiStage.sv
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Comb.sv
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Stage.sv
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Pipeline.sv
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_MultiStage.sv
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Core.sv
 }
 read_verilog -library xil_defaultlib {
-  D:/HDL/lab/activecore/designs/rtl/udm/hw/udm.v
-  D:/HDL/lab/activecore/designs/rtl/udm/hw/uart_rx.v
-  D:/HDL/lab/activecore/designs/rtl/udm/hw/udm_controller.v
-  D:/HDL/lab/activecore/designs/rtl/udm/hw/uart_tx.v
-  D:/HDL/lab/activecore/designs/rtl/reset_sync/reset_sync.v
-  D:/HDL/lab/activecore/designs/rtl/ram/ram_dual_memsplit.v
-  D:/HDL/lab/activecore/designs/rtl/ram/ram.v
-  D:/HDL/lab/activecore/designs/rtl/ram/ram_dual.v
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/hw/udm.v
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/hw/uart_rx.v
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/hw/udm_controller.v
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/hw/uart_tx.v
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/reset_sync/reset_sync.v
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/ram/ram_dual_memsplit.v
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/ram/ram.v
+  C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/ram/ram_dual.v
 }
-read_ip -quiet D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xci
-set_property used_in_implementation false [get_files -all d:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_board.xdc]
-set_property used_in_implementation false [get_files -all d:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc]
-set_property used_in_implementation false [get_files -all d:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_ooc.xdc]
+read_ip -quiet C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -60,8 +61,8 @@ set_property used_in_implementation false [get_files -all d:/HDL/lab/activecore/
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc
-set_property used_in_implementation false [get_files D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
+read_xdc C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc
+set_property used_in_implementation false [get_files C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

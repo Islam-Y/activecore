@@ -1,0 +1,201 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 11 17:31:25 2024
+# Process ID: 12776
+# Current directory: C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12692 C:\Users\user\Desktop\activecore-final\activecore\designs\rtl\udm\syn\NEXYS4_DDR\NEXYS4_DDR.xpr
+# Log file: C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/vivado.log
+# Journal file: C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xpr
+INFO: [Project 1-313] Project file moved from 'D:/HDL/lab/activecore/designs/rtl/udm/syn/NEXYS4_DDR' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.ip_user_files/ip/sys_clk/sys_clk_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sys_clk
+INFO: [VRFC 10-311] analyzing module sys_clk_sys_clk_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/tb/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NEXYS4_DDR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/hw/udm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/hw/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/hw/udm_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/hw/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/reset_sync/reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/ram/ram_dual_memsplit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual_memsplit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/ram/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/ram/ram_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Comb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Comb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Pipeline.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Pipeline
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_MultiStage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_MultiStage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/LFSR_Core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sim_1/new/mod_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_LFSR_Comb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xelab -wto 03603160a2ff4bb7b83a1876f332687d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 03603160a2ff4bb7b83a1876f332687d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LFSR_MultiStage
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Dec 11 17:34:10 2024...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 817.570 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time: 5000 | Counter: 0 | Feedback: 0 | Current State: 00000000 | LFSR Output: 00000000
+Time: 15000 | Counter: 0 | Feedback: 0 | Current State: 00000000 | LFSR Output: 00000000
+Time: 25000 | Counter: 1 | Feedback: 1 | Current State: 1234fadc | LFSR Output: 00000000
+Time: 35000 | Counter: 2 | Feedback: 0 | Current State: 891a7d6e | LFSR Output: 00000000
+Time: 45000 | Counter: 3 | Feedback: 0 | Current State: 448d3eb7 | LFSR Output: 00000000
+Time: 55000 | Counter: 4 | Feedback: 1 | Current State: 22469f5b | LFSR Output: 00000000
+Time: 65000 | Counter: 5 | Feedback: 0 | Current State: 91234fad | LFSR Output: 00000000
+Time: 75000 | Counter: 6 | Feedback: 0 | Current State: 4891a7d6 | LFSR Output: 00000000
+Time: 85000 | Counter: 7 | Feedback: 0 | Current State: 2448d3eb | LFSR Output: 00000000
+Time: 95000 | Counter: 8 | Feedback: 0 | Current State: 122469f5 | LFSR Output: 00000000
+Time: 105000 | Counter: 9 | Feedback: 1 | Current State: 091234fa | LFSR Output: 00000000
+Time: 115000 | Counter: 10 | Feedback: 0 | Current State: 84891a7d | LFSR Output: 00000000
+Time: 125000 | Counter: 11 | Feedback: 0 | Current State: 42448d3e | LFSR Output: 00000000
+Time: 135000 | Counter: 12 | Feedback: 0 | Current State: 2122469f | LFSR Output: 00000000
+Time: 145000 | Counter: 13 | Feedback: 1 | Current State: 1091234f | LFSR Output: 00000000
+Time: 155000 | Counter: 14 | Feedback: 1 | Current State: 884891a7 | LFSR Output: 00000000
+Time: 165000 | Counter: 15 | Feedback: 1 | Current State: c42448d3 | LFSR Output: 00000000
+Time: 175000 | Counter: 16 | Feedback: 1 | Current State: e2122469 | LFSR Output: 00000000
+Time: 185000 | Counter: 17 | Feedback: 1 | Current State: f1091234 | LFSR Output: 00000000
+Time: 195000 | Counter: 18 | Feedback: 0 | Current State: f884891a | LFSR Output: 00000000
+Time: 205000 | Counter: 19 | Feedback: 0 | Current State: 7c42448d | LFSR Output: 00000000
+Time: 215000 | Counter: 20 | Feedback: 1 | Current State: 3e212246 | LFSR Output: 00000000
+Time: 225000 | Counter: 21 | Feedback: 0 | Current State: 9f109123 | LFSR Output: 00000000
+Time: 235000 | Counter: 22 | Feedback: 0 | Current State: 4f884891 | LFSR Output: 00000000
+Time: 245000 | Counter: 23 | Feedback: 0 | Current State: 27c42448 | LFSR Output: 00000000
+Time: 255000 | Counter: 24 | Feedback: 1 | Current State: 13e21224 | LFSR Output: 00000000
+Time: 265000 | Counter: 25 | Feedback: 0 | Current State: 89f10912 | LFSR Output: 00000000
+Time: 275000 | Counter: 26 | Feedback: 0 | Current State: 44f88489 | LFSR Output: 00000000
+Time: 285000 | Counter: 27 | Feedback: 0 | Current State: 227c4244 | LFSR Output: 00000000
+Time: 295000 | Counter: 28 | Feedback: 0 | Current State: 113e2122 | LFSR Output: 00000000
+Time: 305000 | Counter: 29 | Feedback: 0 | Current State: 089f1091 | LFSR Output: 00000000
+Time: 315000 | Counter: 30 | Feedback: 0 | Current State: 044f8848 | LFSR Output: 00000000
+Time: 325000 | Counter: 31 | Feedback: 1 | Current State: 0227c424 | LFSR Output: 00000000
+Time: 335000 | Counter: 32 | Feedback: 1 | Current State: 8113e212 | LFSR Output: 00000000
+Time: 345000 | Counter: 0 | Feedback: 1 | Current State: 8113e212 | LFSR Output: c089f109
+Time: 355000 | Counter: 0 | Feedback: 1 | Current State: 8113e212 | LFSR Output: c089f109
+Time: 365000 | Counter: 0 | Feedback: 1 | Current State: 8113e212 | LFSR Output: c089f109
+$finish called at time : 370 ns : File "C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/tb/tb.sv" Line 116
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 817.570 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Wed Dec 11 17:34:23 2024] Launched synth_1...
+Run output will be captured here: C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Dec 11 17:36:57 2024] Launched impl_1...
+Run output will be captured here: C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec 11 17:38:18 2024] Launched impl_1...
+Run output will be captured here: C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD3204A
+set_property PROGRAM.FILE {C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/user/Desktop/activecore-final/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 18:04:52 2024...
